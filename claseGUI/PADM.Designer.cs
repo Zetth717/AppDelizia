@@ -58,7 +58,7 @@
             this.groupBox1.Controls.Add(this.btnCocina);
             this.groupBox1.Controls.Add(this.btnPedidos);
             this.groupBox1.Controls.Add(this.btnUserMgment);
-            this.groupBox1.Location = new System.Drawing.Point(498, 12);
+            this.groupBox1.Location = new System.Drawing.Point(493, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(395, 576);
             this.groupBox1.TabIndex = 1;
