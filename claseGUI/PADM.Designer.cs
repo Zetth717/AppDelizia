@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PADM));
             this.btnUserMgment = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnPedidos = new System.Windows.Forms.Button();
-            this.btnCocina = new System.Windows.Forms.Button();
-            this.btnReparto = new System.Windows.Forms.Button();
-            this.btnButton = new System.Windows.Forms.Button();
             this.btnButton2 = new System.Windows.Forms.Button();
+            this.btnButton = new System.Windows.Forms.Button();
+            this.btnReparto = new System.Windows.Forms.Button();
+            this.btnCocina = new System.Windows.Forms.Button();
+            this.btnPedidos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,39 +60,19 @@
             this.groupBox1.Controls.Add(this.btnUserMgment);
             this.groupBox1.Location = new System.Drawing.Point(498, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(390, 576);
+            this.groupBox1.Size = new System.Drawing.Size(395, 576);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // btnPedidos
+            // btnButton2
             // 
-            this.btnPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedidos.Location = new System.Drawing.Point(203, 19);
-            this.btnPedidos.Name = "btnPedidos";
-            this.btnPedidos.Size = new System.Drawing.Size(181, 44);
-            this.btnPedidos.TabIndex = 1;
-            this.btnPedidos.Text = "Pedidos";
-            this.btnPedidos.UseVisualStyleBackColor = true;
-            // 
-            // btnCocina
-            // 
-            this.btnCocina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCocina.Location = new System.Drawing.Point(203, 69);
-            this.btnCocina.Name = "btnCocina";
-            this.btnCocina.Size = new System.Drawing.Size(181, 44);
-            this.btnCocina.TabIndex = 2;
-            this.btnCocina.Text = "Cocina";
-            this.btnCocina.UseVisualStyleBackColor = true;
-            // 
-            // btnReparto
-            // 
-            this.btnReparto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReparto.Location = new System.Drawing.Point(203, 119);
-            this.btnReparto.Name = "btnReparto";
-            this.btnReparto.Size = new System.Drawing.Size(181, 44);
-            this.btnReparto.TabIndex = 3;
-            this.btnReparto.Text = "Reparto";
-            this.btnReparto.UseVisualStyleBackColor = true;
+            this.btnButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnButton2.Location = new System.Drawing.Point(6, 119);
+            this.btnButton2.Name = "btnButton2";
+            this.btnButton2.Size = new System.Drawing.Size(181, 44);
+            this.btnButton2.TabIndex = 5;
+            this.btnButton2.Text = "Button";
+            this.btnButton2.UseVisualStyleBackColor = true;
             // 
             // btnButton
             // 
@@ -104,15 +84,35 @@
             this.btnButton.Text = "Button";
             this.btnButton.UseVisualStyleBackColor = true;
             // 
-            // btnButton2
+            // btnReparto
             // 
-            this.btnButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnButton2.Location = new System.Drawing.Point(6, 119);
-            this.btnButton2.Name = "btnButton2";
-            this.btnButton2.Size = new System.Drawing.Size(181, 44);
-            this.btnButton2.TabIndex = 5;
-            this.btnButton2.Text = "Button";
-            this.btnButton2.UseVisualStyleBackColor = true;
+            this.btnReparto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReparto.Location = new System.Drawing.Point(208, 119);
+            this.btnReparto.Name = "btnReparto";
+            this.btnReparto.Size = new System.Drawing.Size(181, 44);
+            this.btnReparto.TabIndex = 3;
+            this.btnReparto.Text = "Reparto";
+            this.btnReparto.UseVisualStyleBackColor = true;
+            // 
+            // btnCocina
+            // 
+            this.btnCocina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCocina.Location = new System.Drawing.Point(208, 69);
+            this.btnCocina.Name = "btnCocina";
+            this.btnCocina.Size = new System.Drawing.Size(181, 44);
+            this.btnCocina.TabIndex = 2;
+            this.btnCocina.Text = "Cocina";
+            this.btnCocina.UseVisualStyleBackColor = true;
+            // 
+            // btnPedidos
+            // 
+            this.btnPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPedidos.Location = new System.Drawing.Point(208, 19);
+            this.btnPedidos.Name = "btnPedidos";
+            this.btnPedidos.Size = new System.Drawing.Size(181, 44);
+            this.btnPedidos.TabIndex = 1;
+            this.btnPedidos.Text = "Pedidos";
+            this.btnPedidos.UseVisualStyleBackColor = true;
             // 
             // PADM
             // 
