@@ -1,4 +1,4 @@
-﻿namespace capaGUI
+﻿namespace claseGUI
 {
     partial class P1
     {

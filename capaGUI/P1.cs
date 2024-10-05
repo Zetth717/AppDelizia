@@ -192,7 +192,5 @@ namespace claseGUI
                 MessageBox.Show("No se pudo conectar a la base de datos.", "Estado de Conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
     }
 }

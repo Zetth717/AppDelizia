@@ -44,7 +44,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::claseGUI.Properties.Resources.LogoDelizia;
+            this.BackgroundImage = global::capaGUI.Properties.Resources.LogoDelizia;
             this.ClientSize = new System.Drawing.Size(900, 600);
             this.Controls.Add(this.groupBoxPedidos);
             this.Name = "Pedidos";
