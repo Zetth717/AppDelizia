@@ -153,7 +153,6 @@ namespace claseGUI
         //Evento para el idioma
 
         private bool idiomaIngles = true; // true para español, false para inglés;
-        private object dataGridViewResultados;
 
         private void CambiarIdioma()
         {
