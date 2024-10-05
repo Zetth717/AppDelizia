@@ -37,9 +37,23 @@ namespace claseGUI
             CambiarIdioma();
         }
 
+
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            
+            string nombreUsuario = textBoxUser.Text;
+            string claveUsuario = textBoxPsw.Text;
+
+            Login login = new Login();
+            bool esValido = login.VerificarUsuario(nombreUsuario, claveUsuario);
+
+            if (esValido)
+            {
+                MessageBox.Show("Usuario válido", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("ID o clave incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
