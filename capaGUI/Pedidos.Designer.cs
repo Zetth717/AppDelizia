@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
             this.groupBoxPedidos = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             this.BackgroundImage = global::capaGUI.Properties.Resources.LogoDelizia;
             this.ClientSize = new System.Drawing.Size(900, 600);
             this.Controls.Add(this.groupBoxPedidos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pedidos";
             this.Text = "Pedidos";
             this.ResumeLayout(false);

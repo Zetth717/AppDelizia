@@ -43,9 +43,9 @@
             // btnEnter
             // 
             this.btnEnter.BackColor = System.Drawing.Color.Peru;
-            this.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnter.Location = new System.Drawing.Point(39, 274);
+            this.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEnter.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnter.Location = new System.Drawing.Point(39, 271);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(99, 38);
             this.btnEnter.TabIndex = 1;
@@ -56,9 +56,9 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Firebrick;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(153, 274);
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(153, 271);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(99, 38);
             this.btnExit.TabIndex = 2;
@@ -69,11 +69,11 @@
             // textBoxUser
             // 
             this.textBoxUser.BackColor = System.Drawing.Color.PeachPuff;
-            this.textBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUser.Location = new System.Drawing.Point(39, 177);
+            this.textBoxUser.Location = new System.Drawing.Point(39, 174);
             this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(213, 24);
+            this.textBoxUser.Size = new System.Drawing.Size(213, 31);
             this.textBoxUser.TabIndex = 3;
             this.textBoxUser.Enter += new System.EventHandler(this.textBoxUser_Enter);
             this.textBoxUser.Leave += new System.EventHandler(this.textBoxUser_Leave);
@@ -81,11 +81,11 @@
             // textBoxPsw
             // 
             this.textBoxPsw.BackColor = System.Drawing.Color.PeachPuff;
-            this.textBoxPsw.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPsw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPsw.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPsw.Location = new System.Drawing.Point(39, 221);
+            this.textBoxPsw.Location = new System.Drawing.Point(39, 218);
             this.textBoxPsw.Name = "textBoxPsw";
-            this.textBoxPsw.Size = new System.Drawing.Size(213, 24);
+            this.textBoxPsw.Size = new System.Drawing.Size(213, 31);
             this.textBoxPsw.TabIndex = 4;
             this.textBoxPsw.UseSystemPasswordChar = true;
             this.textBoxPsw.Enter += new System.EventHandler(this.textBoxPsw_Enter);
@@ -94,22 +94,22 @@
             // labelInicio
             // 
             this.labelInicio.AutoSize = true;
-            this.labelInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.labelInicio.BackColor = System.Drawing.Color.Transparent;
             this.labelInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelInicio.Font = new System.Drawing.Font("MV Boli", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInicio.Font = new System.Drawing.Font("Segoe Print", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelInicio.ForeColor = System.Drawing.Color.Peru;
-            this.labelInicio.Location = new System.Drawing.Point(92, 107);
+            this.labelInicio.Location = new System.Drawing.Point(79, 104);
             this.labelInicio.Name = "labelInicio";
-            this.labelInicio.Size = new System.Drawing.Size(113, 49);
+            this.labelInicio.Size = new System.Drawing.Size(126, 65);
             this.labelInicio.TabIndex = 5;
             this.labelInicio.Text = "Inicio";
             // 
             // btnLang
             // 
             this.btnLang.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnLang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLang.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLang.Location = new System.Drawing.Point(162, 87);
+            this.btnLang.Location = new System.Drawing.Point(162, 95);
             this.btnLang.Name = "btnLang";
             this.btnLang.Size = new System.Drawing.Size(43, 17);
             this.btnLang.TabIndex = 6;
@@ -119,21 +119,22 @@
             // 
             // btnPrueba
             // 
-            this.btnPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrueba.Location = new System.Drawing.Point(89, 342);
+            this.btnPrueba.BackColor = System.Drawing.Color.Peru;
+            this.btnPrueba.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrueba.Location = new System.Drawing.Point(795, 564);
             this.btnPrueba.Name = "btnPrueba";
-            this.btnPrueba.Size = new System.Drawing.Size(99, 38);
+            this.btnPrueba.Size = new System.Drawing.Size(93, 24);
             this.btnPrueba.TabIndex = 7;
-            this.btnPrueba.Text = "Prueba BD";
-            this.btnPrueba.UseVisualStyleBackColor = true;
+            this.btnPrueba.Text = "Prueba DB";
+            this.btnPrueba.UseVisualStyleBackColor = false;
             this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
             // 
             // groupBoxInicio
             // 
             this.groupBoxInicio.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxInicio.Controls.Add(this.labelInicio);
-            this.groupBoxInicio.Controls.Add(this.btnPrueba);
             this.groupBoxInicio.Controls.Add(this.btnLang);
+            this.groupBoxInicio.Controls.Add(this.labelInicio);
             this.groupBoxInicio.Controls.Add(this.btnEnter);
             this.groupBoxInicio.Controls.Add(this.btnExit);
             this.groupBoxInicio.Controls.Add(this.textBoxUser);
@@ -152,6 +153,7 @@
             this.BackgroundImage = global::capaGUI.Properties.Resources.LogoDelizia;
             this.ClientSize = new System.Drawing.Size(900, 600);
             this.Controls.Add(this.groupBoxInicio);
+            this.Controls.Add(this.btnPrueba);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "P1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -103,12 +103,12 @@ namespace claseGUI
         // Evento cuando el textBoxUser pierde el foco
         private void textBoxUser_Leave(object sender, EventArgs e)
         {
-            if (textBoxUser.Text == "" & idiomaIngles == false)
+            if (textBoxUser.Text == "" & idiomaIngles == true)
             {
                 textBoxUser.Text = "Usuario";
                 textBoxUser.ForeColor = Color.Gray;
             }
-            if (textBoxUser.Text == "" & idiomaIngles == true)
+            if (textBoxUser.Text == "" & idiomaIngles == false)
             {
                 textBoxUser.Text = "Username";
                 textBoxUser.ForeColor = Color.Gray;

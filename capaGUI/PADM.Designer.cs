@@ -41,13 +41,16 @@
             // 
             // btnUserMgment
             // 
+            this.btnUserMgment.BackColor = System.Drawing.Color.Peru;
+            this.btnUserMgment.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUserMgment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserMgment.ForeColor = System.Drawing.Color.Black;
             this.btnUserMgment.Location = new System.Drawing.Point(6, 19);
             this.btnUserMgment.Name = "btnUserMgment";
             this.btnUserMgment.Size = new System.Drawing.Size(181, 44);
             this.btnUserMgment.TabIndex = 0;
             this.btnUserMgment.Text = "Gestión de Usuarios";
-            this.btnUserMgment.UseVisualStyleBackColor = true;
+            this.btnUserMgment.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -66,53 +69,63 @@
             // 
             // btnButton2
             // 
+            this.btnButton2.BackColor = System.Drawing.Color.Peru;
+            this.btnButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnButton2.Location = new System.Drawing.Point(6, 119);
             this.btnButton2.Name = "btnButton2";
             this.btnButton2.Size = new System.Drawing.Size(181, 44);
             this.btnButton2.TabIndex = 5;
             this.btnButton2.Text = "Button2";
-            this.btnButton2.UseVisualStyleBackColor = true;
+            this.btnButton2.UseVisualStyleBackColor = false;
             // 
             // btnButton
             // 
+            this.btnButton.BackColor = System.Drawing.Color.Peru;
+            this.btnButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnButton.Location = new System.Drawing.Point(6, 69);
             this.btnButton.Name = "btnButton";
             this.btnButton.Size = new System.Drawing.Size(181, 44);
             this.btnButton.TabIndex = 4;
             this.btnButton.Text = "Button";
-            this.btnButton.UseVisualStyleBackColor = true;
+            this.btnButton.UseVisualStyleBackColor = false;
             // 
             // btnReparto
             // 
+            this.btnReparto.BackColor = System.Drawing.Color.Peru;
+            this.btnReparto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReparto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReparto.Location = new System.Drawing.Point(208, 119);
             this.btnReparto.Name = "btnReparto";
             this.btnReparto.Size = new System.Drawing.Size(181, 44);
             this.btnReparto.TabIndex = 3;
             this.btnReparto.Text = "Reparto";
-            this.btnReparto.UseVisualStyleBackColor = true;
+            this.btnReparto.UseVisualStyleBackColor = false;
             // 
             // btnCocina
             // 
+            this.btnCocina.BackColor = System.Drawing.Color.Peru;
+            this.btnCocina.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCocina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCocina.Location = new System.Drawing.Point(208, 69);
             this.btnCocina.Name = "btnCocina";
             this.btnCocina.Size = new System.Drawing.Size(181, 44);
             this.btnCocina.TabIndex = 2;
             this.btnCocina.Text = "Cocina";
-            this.btnCocina.UseVisualStyleBackColor = true;
+            this.btnCocina.UseVisualStyleBackColor = false;
             // 
             // btnPedidos
             // 
+            this.btnPedidos.BackColor = System.Drawing.Color.Peru;
+            this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPedidos.Location = new System.Drawing.Point(208, 19);
             this.btnPedidos.Name = "btnPedidos";
             this.btnPedidos.Size = new System.Drawing.Size(181, 44);
             this.btnPedidos.TabIndex = 1;
             this.btnPedidos.Text = "Pedidos";
-            this.btnPedidos.UseVisualStyleBackColor = true;
+            this.btnPedidos.UseVisualStyleBackColor = false;
             // 
             // PADM
             // 
