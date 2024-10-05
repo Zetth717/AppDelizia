@@ -56,10 +56,28 @@
     <Compile Include="P1.Designer.cs">
       <DependentUpon>P1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PADM.Designer.cs">
+      <DependentUpon>PADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="P1.resx">
       <DependentUpon>P1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PADM.resx">
+      <DependentUpon>PADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,6 +110,9 @@
       <Project>{ad5ff1d4-7eb9-45c4-a5c9-8edf04fee58c}</Project>
       <Name>capaLógica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoDelizia.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
