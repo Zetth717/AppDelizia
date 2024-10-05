@@ -16,5 +16,14 @@ namespace claseGUI
         {
             InitializeComponent();
         }
+
+        private void butnVolver_Click(object sender, EventArgs e)
+        {
+            P1 nuevoFormulario = new P1();
+            nuevoFormulario.Show();
+
+            // Cerrar o esconder el formulario actual (Form1)
+            this.Hide();
+        }
     }
 }

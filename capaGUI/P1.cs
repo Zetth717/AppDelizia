@@ -49,6 +49,12 @@ namespace claseGUI
             if (esValido)
             {
                 MessageBox.Show("Usuario válido", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                PADM nuevoFormulario = new PADM();
+                nuevoFormulario.Show();
+
+                // Cerrar o esconder el formulario actual (Form1)
+                this.Hide();
             }
             else
             {

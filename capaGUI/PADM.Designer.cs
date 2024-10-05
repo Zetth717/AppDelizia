@@ -36,6 +36,7 @@
             this.btnReparto = new System.Windows.Forms.Button();
             this.btnCocina = new System.Windows.Forms.Button();
             this.btnPedidos = new System.Windows.Forms.Button();
+            this.butnVolver = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +56,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.butnVolver);
             this.groupBox1.Controls.Add(this.btnButton2);
             this.groupBox1.Controls.Add(this.btnButton);
             this.groupBox1.Controls.Add(this.btnReparto);
@@ -127,6 +129,19 @@
             this.btnPedidos.Text = "Pedidos";
             this.btnPedidos.UseVisualStyleBackColor = false;
             // 
+            // butnVolver
+            // 
+            this.butnVolver.BackColor = System.Drawing.Color.Firebrick;
+            this.butnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.butnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butnVolver.Location = new System.Drawing.Point(208, 169);
+            this.butnVolver.Name = "butnVolver";
+            this.butnVolver.Size = new System.Drawing.Size(181, 44);
+            this.butnVolver.TabIndex = 6;
+            this.butnVolver.Text = "Volver";
+            this.butnVolver.UseVisualStyleBackColor = false;
+            this.butnVolver.Click += new System.EventHandler(this.butnVolver_Click);
+            // 
             // PADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,6 +151,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PADM";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PADM";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -151,5 +167,6 @@
         private System.Windows.Forms.Button btnPedidos;
         private System.Windows.Forms.Button btnButton2;
         private System.Windows.Forms.Button btnButton;
+        private System.Windows.Forms.Button butnVolver;
     }
 }
