@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CF256A48-6A39-41FD-AF82-EDB6D1336E64}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>claseGUI</RootNamespace>
+    <RootNamespace>capaGUI</RootNamespace>
     <AssemblyName>capaGUI</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
