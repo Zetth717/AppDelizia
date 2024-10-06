@@ -128,13 +128,14 @@
             this.btnPedidos.TabIndex = 1;
             this.btnPedidos.Text = "Pedidos";
             this.btnPedidos.UseVisualStyleBackColor = false;
+            this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
             // butnVolver
             // 
             this.butnVolver.BackColor = System.Drawing.Color.Firebrick;
             this.butnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.butnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butnVolver.Location = new System.Drawing.Point(208, 169);
+            this.butnVolver.Location = new System.Drawing.Point(208, 526);
             this.butnVolver.Name = "butnVolver";
             this.butnVolver.Size = new System.Drawing.Size(181, 44);
             this.butnVolver.TabIndex = 6;
@@ -149,6 +150,7 @@
             this.BackgroundImage = global::capaGUI.Properties.Resources.LogoDelizia;
             this.ClientSize = new System.Drawing.Size(900, 600);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PADM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

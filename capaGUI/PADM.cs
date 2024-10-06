@@ -25,5 +25,14 @@ namespace claseGUI
             // Cerrar o esconder el formulario actual (Form1)
             this.Hide();
         }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            Pedidos nuevoFormulario = new Pedidos();
+            nuevoFormulario.Show();
+
+            // Cerrar o esconder el formulario actual (Form1)
+            this.Hide();
+        }
     }
 }

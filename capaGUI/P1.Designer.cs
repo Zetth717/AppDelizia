@@ -154,6 +154,7 @@
             this.ClientSize = new System.Drawing.Size(900, 600);
             this.Controls.Add(this.groupBoxInicio);
             this.Controls.Add(this.btnPrueba);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "P1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
