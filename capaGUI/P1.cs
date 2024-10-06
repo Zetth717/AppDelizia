@@ -37,29 +37,31 @@ namespace claseGUI
             CambiarIdioma();
         }
 
-
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            string nombreUsuario = textBoxUser.Text;
-            string claveUsuario = textBoxPsw.Text;
+            string nombre = textBoxUser.Text;
+            string clave = textBoxPsw.Text;
 
             Login login = new Login();
-            bool esValido = login.VerificarUsuario(nombreUsuario, claveUsuario);
+            string rol = login.VerificarUsuarioYObtenerRol(nombre, clave);  // Obtener el rol del usuario
 
-            if (esValido)
+            if (rol == null)
             {
-                MessageBox.Show("Usuario válido", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                PADM nuevoFormulario = new PADM();
-                nuevoFormulario.Show();
-
-                // Cerrar o esconder el formulario actual (Form1)
-                this.Hide();
+                MessageBox.Show("Usuario o clave incorrectos.");
             }
-            else
+            else if (rol == "ADMINISTRADOR")
             {
-                MessageBox.Show("ID o clave incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                PADM formAdmin = new PADM();
+                formAdmin.Show();
+                this.Hide();  // Ocultar el formulario actual
             }
+            else if (rol == "PEDIDOS")
+            {
+                Pedidos formCocinero = new Pedidos();
+                formCocinero.Show();
+                this.Hide();  // Ocultar el formulario actual
+            }
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
