@@ -172,7 +172,6 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackgroundImage = global::capaGUI.Properties.Resources.Cerrar1;
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Location = new System.Drawing.Point(869, 3);
             this.btnSalir.Name = "btnSalir";
