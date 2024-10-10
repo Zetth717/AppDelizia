@@ -31,13 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PADM));
             this.btnUserMgment = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.butnVolver = new System.Windows.Forms.Button();
             this.btnButton2 = new System.Windows.Forms.Button();
             this.btnButton = new System.Windows.Forms.Button();
             this.btnReparto = new System.Windows.Forms.Button();
             this.btnCocina = new System.Windows.Forms.Button();
             this.btnPedidos = new System.Windows.Forms.Button();
-            this.butnVolver = new System.Windows.Forms.Button();
+            this.panelAdmin = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            this.panelAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUserMgment
@@ -63,11 +69,24 @@
             this.groupBox1.Controls.Add(this.btnCocina);
             this.groupBox1.Controls.Add(this.btnPedidos);
             this.groupBox1.Controls.Add(this.btnUserMgment);
-            this.groupBox1.Location = new System.Drawing.Point(493, 12);
+            this.groupBox1.Location = new System.Drawing.Point(493, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(395, 576);
+            this.groupBox1.Size = new System.Drawing.Size(395, 554);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // butnVolver
+            // 
+            this.butnVolver.BackColor = System.Drawing.Color.Firebrick;
+            this.butnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.butnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butnVolver.Location = new System.Drawing.Point(208, 504);
+            this.butnVolver.Name = "butnVolver";
+            this.butnVolver.Size = new System.Drawing.Size(181, 44);
+            this.butnVolver.TabIndex = 6;
+            this.butnVolver.Text = "Volver";
+            this.butnVolver.UseVisualStyleBackColor = false;
+            this.butnVolver.Click += new System.EventHandler(this.butnVolver_Click);
             // 
             // btnButton2
             // 
@@ -130,18 +149,37 @@
             this.btnPedidos.UseVisualStyleBackColor = false;
             this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
-            // butnVolver
+            // panelAdmin
             // 
-            this.butnVolver.BackColor = System.Drawing.Color.Firebrick;
-            this.butnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.butnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butnVolver.Location = new System.Drawing.Point(208, 526);
-            this.butnVolver.Name = "butnVolver";
-            this.butnVolver.Size = new System.Drawing.Size(181, 44);
-            this.butnVolver.TabIndex = 6;
-            this.butnVolver.Text = "Volver";
-            this.butnVolver.UseVisualStyleBackColor = false;
-            this.butnVolver.Click += new System.EventHandler(this.butnVolver_Click);
+            this.panelAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.panelAdmin.Controls.Add(this.btnMinimizar);
+            this.panelAdmin.Controls.Add(this.btnSalir);
+            this.panelAdmin.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.panelAdmin.Location = new System.Drawing.Point(-2, -1);
+            this.panelAdmin.Name = "panelAdmin";
+            this.panelAdmin.Size = new System.Drawing.Size(903, 37);
+            this.panelAdmin.TabIndex = 10;
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackgroundImage = global::capaGUI.Properties.Resources.delete_14793494;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Location = new System.Drawing.Point(838, 3);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.TabIndex = 11;
+            this.btnMinimizar.TabStop = false;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackgroundImage = global::capaGUI.Properties.Resources.Cerrar1;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.Location = new System.Drawing.Point(869, 3);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(25, 25);
+            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSalir.TabIndex = 10;
+            this.btnSalir.TabStop = false;
             // 
             // PADM
             // 
@@ -149,6 +187,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::capaGUI.Properties.Resources.LogoDelizia;
             this.ClientSize = new System.Drawing.Size(900, 600);
+            this.Controls.Add(this.panelAdmin);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -156,6 +195,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PADM";
             this.groupBox1.ResumeLayout(false);
+            this.panelAdmin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,5 +212,8 @@
         private System.Windows.Forms.Button btnButton2;
         private System.Windows.Forms.Button btnButton;
         private System.Windows.Forms.Button butnVolver;
+        private System.Windows.Forms.Panel panelAdmin;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnSalir;
     }
 }

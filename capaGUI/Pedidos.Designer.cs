@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
             this.groupBoxPedidos = new System.Windows.Forms.GroupBox();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.btnAgregarPedido = new System.Windows.Forms.Button();
-            this.btnListaPedidos = new System.Windows.Forms.Button();
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.textBoxApellido = new System.Windows.Forms.TextBox();
-            this.textBoxTel = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.btnAgergar = new System.Windows.Forms.Button();
             this.textBoxDirección = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.btnAgergar = new System.Windows.Forms.Button();
+            this.textBoxApellido = new System.Windows.Forms.TextBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.textBoxTel = new System.Windows.Forms.TextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnListaPedidos = new System.Windows.Forms.Button();
+            this.btnAgregarPedido = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.groupBoxPedidos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,92 +64,17 @@
             this.groupBoxPedidos.TabIndex = 1;
             this.groupBoxPedidos.TabStop = false;
             // 
-            // btnVolver
+            // btnAgergar
             // 
-            this.btnVolver.BackColor = System.Drawing.Color.Firebrick;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVolver.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(208, 526);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(181, 44);
-            this.btnVolver.TabIndex = 0;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
-            // btnAgregarPedido
-            // 
-            this.btnAgregarPedido.BackColor = System.Drawing.Color.Peru;
-            this.btnAgregarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregarPedido.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarPedido.Location = new System.Drawing.Point(208, 414);
-            this.btnAgregarPedido.Name = "btnAgregarPedido";
-            this.btnAgregarPedido.Size = new System.Drawing.Size(181, 44);
-            this.btnAgregarPedido.TabIndex = 1;
-            this.btnAgregarPedido.Text = "Crear pedido";
-            this.btnAgregarPedido.UseVisualStyleBackColor = false;
-            // 
-            // btnListaPedidos
-            // 
-            this.btnListaPedidos.BackColor = System.Drawing.Color.Peru;
-            this.btnListaPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnListaPedidos.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListaPedidos.Location = new System.Drawing.Point(7, 526);
-            this.btnListaPedidos.Name = "btnListaPedidos";
-            this.btnListaPedidos.Size = new System.Drawing.Size(181, 44);
-            this.btnListaPedidos.TabIndex = 2;
-            this.btnListaPedidos.Text = "Lista de pedidos";
-            this.btnListaPedidos.UseVisualStyleBackColor = false;
-            // 
-            // textBoxNombre
-            // 
-            this.textBoxNombre.BackColor = System.Drawing.Color.PeachPuff;
-            this.textBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombre.Location = new System.Drawing.Point(208, 257);
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(181, 31);
-            this.textBoxNombre.TabIndex = 3;
-            // 
-            // textBoxApellido
-            // 
-            this.textBoxApellido.BackColor = System.Drawing.Color.PeachPuff;
-            this.textBoxApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxApellido.Location = new System.Drawing.Point(208, 294);
-            this.textBoxApellido.Name = "textBoxApellido";
-            this.textBoxApellido.Size = new System.Drawing.Size(181, 31);
-            this.textBoxApellido.TabIndex = 4;
-            // 
-            // textBoxTel
-            // 
-            this.textBoxTel.BackColor = System.Drawing.Color.PeachPuff;
-            this.textBoxTel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTel.Location = new System.Drawing.Point(208, 331);
-            this.textBoxTel.Name = "textBoxTel";
-            this.textBoxTel.Size = new System.Drawing.Size(181, 31);
-            this.textBoxTel.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.PeachPuff;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(330, 21);
-            this.comboBox1.TabIndex = 6;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.BackColor = System.Drawing.Color.PeachPuff;
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(349, 19);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(40, 21);
-            this.comboBox3.TabIndex = 8;
+            this.btnAgergar.BackColor = System.Drawing.Color.Peru;
+            this.btnAgergar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgergar.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgergar.Location = new System.Drawing.Point(208, 54);
+            this.btnAgergar.Name = "btnAgergar";
+            this.btnAgergar.Size = new System.Drawing.Size(181, 44);
+            this.btnAgergar.TabIndex = 12;
+            this.btnAgergar.Text = "Agregar producto";
+            this.btnAgergar.UseVisualStyleBackColor = false;
             // 
             // textBoxDirección
             // 
@@ -170,17 +95,92 @@
             this.listBox1.Size = new System.Drawing.Size(181, 459);
             this.listBox1.TabIndex = 11;
             // 
-            // btnAgergar
+            // textBoxApellido
             // 
-            this.btnAgergar.BackColor = System.Drawing.Color.Peru;
-            this.btnAgergar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgergar.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgergar.Location = new System.Drawing.Point(208, 54);
-            this.btnAgergar.Name = "btnAgergar";
-            this.btnAgergar.Size = new System.Drawing.Size(181, 44);
-            this.btnAgergar.TabIndex = 12;
-            this.btnAgergar.Text = "Agregar producto";
-            this.btnAgergar.UseVisualStyleBackColor = false;
+            this.textBoxApellido.BackColor = System.Drawing.Color.PeachPuff;
+            this.textBoxApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxApellido.Location = new System.Drawing.Point(208, 294);
+            this.textBoxApellido.Name = "textBoxApellido";
+            this.textBoxApellido.Size = new System.Drawing.Size(181, 31);
+            this.textBoxApellido.TabIndex = 4;
+            // 
+            // textBoxNombre
+            // 
+            this.textBoxNombre.BackColor = System.Drawing.Color.PeachPuff;
+            this.textBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNombre.Location = new System.Drawing.Point(208, 257);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(181, 31);
+            this.textBoxNombre.TabIndex = 3;
+            // 
+            // textBoxTel
+            // 
+            this.textBoxTel.BackColor = System.Drawing.Color.PeachPuff;
+            this.textBoxTel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTel.Location = new System.Drawing.Point(208, 331);
+            this.textBoxTel.Name = "textBoxTel";
+            this.textBoxTel.Size = new System.Drawing.Size(181, 31);
+            this.textBoxTel.TabIndex = 5;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.BackColor = System.Drawing.Color.PeachPuff;
+            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(349, 19);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(40, 21);
+            this.comboBox3.TabIndex = 8;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.PeachPuff;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 19);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(330, 21);
+            this.comboBox1.TabIndex = 6;
+            // 
+            // btnListaPedidos
+            // 
+            this.btnListaPedidos.BackColor = System.Drawing.Color.Peru;
+            this.btnListaPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnListaPedidos.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListaPedidos.Location = new System.Drawing.Point(7, 526);
+            this.btnListaPedidos.Name = "btnListaPedidos";
+            this.btnListaPedidos.Size = new System.Drawing.Size(181, 44);
+            this.btnListaPedidos.TabIndex = 2;
+            this.btnListaPedidos.Text = "Lista de pedidos";
+            this.btnListaPedidos.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregarPedido
+            // 
+            this.btnAgregarPedido.BackColor = System.Drawing.Color.Peru;
+            this.btnAgregarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregarPedido.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarPedido.Location = new System.Drawing.Point(208, 414);
+            this.btnAgregarPedido.Name = "btnAgregarPedido";
+            this.btnAgregarPedido.Size = new System.Drawing.Size(181, 44);
+            this.btnAgregarPedido.TabIndex = 1;
+            this.btnAgregarPedido.Text = "Crear pedido";
+            this.btnAgregarPedido.UseVisualStyleBackColor = false;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.Firebrick;
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVolver.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Location = new System.Drawing.Point(208, 526);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(181, 44);
+            this.btnVolver.TabIndex = 0;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // Pedidos
             // 

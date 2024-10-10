@@ -37,12 +37,19 @@
             this.btnLang = new System.Windows.Forms.Button();
             this.btnPrueba = new System.Windows.Forms.Button();
             this.groupBoxInicio = new System.Windows.Forms.GroupBox();
+            this.panelInicio = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
             this.groupBoxInicio.SuspendLayout();
+            this.panelInicio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEnter
             // 
             this.btnEnter.BackColor = System.Drawing.Color.Peru;
+            this.btnEnter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEnter.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnter.Location = new System.Drawing.Point(39, 271);
@@ -56,6 +63,7 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Firebrick;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(153, 271);
@@ -122,7 +130,7 @@
             this.btnPrueba.BackColor = System.Drawing.Color.Peru;
             this.btnPrueba.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrueba.Location = new System.Drawing.Point(795, 564);
+            this.btnPrueba.Location = new System.Drawing.Point(95, 372);
             this.btnPrueba.Name = "btnPrueba";
             this.btnPrueba.Size = new System.Drawing.Size(93, 24);
             this.btnPrueba.TabIndex = 7;
@@ -135,6 +143,7 @@
             this.groupBoxInicio.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxInicio.Controls.Add(this.btnLang);
             this.groupBoxInicio.Controls.Add(this.labelInicio);
+            this.groupBoxInicio.Controls.Add(this.btnPrueba);
             this.groupBoxInicio.Controls.Add(this.btnEnter);
             this.groupBoxInicio.Controls.Add(this.btnExit);
             this.groupBoxInicio.Controls.Add(this.textBoxUser);
@@ -145,6 +154,41 @@
             this.groupBoxInicio.TabIndex = 8;
             this.groupBoxInicio.TabStop = false;
             // 
+            // panelInicio
+            // 
+            this.panelInicio.BackColor = System.Drawing.Color.Transparent;
+            this.panelInicio.Controls.Add(this.pictureBox2);
+            this.panelInicio.Controls.Add(this.pictureBoxCerrar);
+            this.panelInicio.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.panelInicio.Location = new System.Drawing.Point(-2, -1);
+            this.panelInicio.Name = "panelInicio";
+            this.panelInicio.Size = new System.Drawing.Size(903, 37);
+            this.panelInicio.TabIndex = 9;
+            this.panelInicio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelInicio_MouseDown);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::capaGUI.Properties.Resources.delete_14793494;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Location = new System.Drawing.Point(838, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBoxCerrar
+            // 
+            this.pictureBoxCerrar.BackgroundImage = global::capaGUI.Properties.Resources.Cerrar1;
+            this.pictureBoxCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCerrar.Location = new System.Drawing.Point(869, 3);
+            this.pictureBoxCerrar.Name = "pictureBoxCerrar";
+            this.pictureBoxCerrar.Size = new System.Drawing.Size(25, 25);
+            this.pictureBoxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCerrar.TabIndex = 10;
+            this.pictureBoxCerrar.TabStop = false;
+            this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
+            // 
             // P1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,15 +196,19 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::capaGUI.Properties.Resources.LogoDelizia;
             this.ClientSize = new System.Drawing.Size(900, 600);
+            this.Controls.Add(this.panelInicio);
             this.Controls.Add(this.groupBoxInicio);
-            this.Controls.Add(this.btnPrueba);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "P1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.P1_Load);
             this.groupBoxInicio.ResumeLayout(false);
             this.groupBoxInicio.PerformLayout();
+            this.panelInicio.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -174,6 +222,9 @@
         private System.Windows.Forms.Button btnLang;
         private System.Windows.Forms.Button btnPrueba;
         private System.Windows.Forms.GroupBox groupBoxInicio;
+        private System.Windows.Forms.Panel panelInicio;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxCerrar;
     }
 }
 
