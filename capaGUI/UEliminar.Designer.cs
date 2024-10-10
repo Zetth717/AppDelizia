@@ -56,6 +56,7 @@
             // 
             // listUsuarios
             // 
+            this.listUsuarios.BackColor = System.Drawing.Color.Peru;
             this.listUsuarios.FormattingEnabled = true;
             this.listUsuarios.Location = new System.Drawing.Point(6, 11);
             this.listUsuarios.Name = "listUsuarios";
@@ -80,7 +81,7 @@
             // 
             this.butnVolver.BackColor = System.Drawing.Color.Firebrick;
             this.butnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.butnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butnVolver.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butnVolver.Location = new System.Drawing.Point(208, 504);
             this.butnVolver.Name = "butnVolver";
             this.butnVolver.Size = new System.Drawing.Size(181, 44);

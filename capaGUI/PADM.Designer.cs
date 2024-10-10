@@ -50,7 +50,7 @@
             // 
             this.btnAddUsuario.BackColor = System.Drawing.Color.Peru;
             this.btnAddUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAddUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddUsuario.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddUsuario.ForeColor = System.Drawing.Color.Black;
             this.btnAddUsuario.Location = new System.Drawing.Point(6, 19);
             this.btnAddUsuario.Name = "btnAddUsuario";
@@ -80,7 +80,7 @@
             // 
             this.butnVolver.BackColor = System.Drawing.Color.Firebrick;
             this.butnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.butnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butnVolver.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butnVolver.Location = new System.Drawing.Point(208, 504);
             this.butnVolver.Name = "butnVolver";
             this.butnVolver.Size = new System.Drawing.Size(181, 44);
@@ -105,7 +105,7 @@
             // 
             this.btnDelUsuario.BackColor = System.Drawing.Color.Peru;
             this.btnDelUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelUsuario.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelUsuario.Location = new System.Drawing.Point(6, 69);
             this.btnDelUsuario.Name = "btnDelUsuario";
             this.btnDelUsuario.Size = new System.Drawing.Size(181, 44);
@@ -118,7 +118,7 @@
             // 
             this.btnReparto.BackColor = System.Drawing.Color.Peru;
             this.btnReparto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReparto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReparto.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReparto.Location = new System.Drawing.Point(208, 119);
             this.btnReparto.Name = "btnReparto";
             this.btnReparto.Size = new System.Drawing.Size(181, 44);
@@ -130,7 +130,7 @@
             // 
             this.btnCocina.BackColor = System.Drawing.Color.Peru;
             this.btnCocina.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCocina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCocina.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCocina.Location = new System.Drawing.Point(208, 69);
             this.btnCocina.Name = "btnCocina";
             this.btnCocina.Size = new System.Drawing.Size(181, 44);
@@ -142,7 +142,7 @@
             // 
             this.btnPedidos.BackColor = System.Drawing.Color.Peru;
             this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPedidos.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPedidos.Location = new System.Drawing.Point(208, 19);
             this.btnPedidos.Name = "btnPedidos";
             this.btnPedidos.Size = new System.Drawing.Size(181, 44);
