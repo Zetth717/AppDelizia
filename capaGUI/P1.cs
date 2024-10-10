@@ -16,7 +16,7 @@ namespace claseGUI
     public partial class P1 : Form
     {
         // Instancia de la capa lógica
-        private Logica logica = new Logica();
+        private ProbarConexion logica = new ProbarConexion();
         public P1()
         {
             InitializeComponent();
@@ -203,7 +203,7 @@ namespace claseGUI
         private void btnPrueba_Click(object sender, EventArgs e)
         {
             // Llama al método ProbarConexion de la capa lógica
-            bool hayConexion = logica.ProbarConexion();
+            bool hayConexion = logica.ProbarConexionDB();
 
             // Mostrar un mensaje indicando el estado de la conexión
             if (hayConexion)
@@ -232,8 +232,7 @@ namespace claseGUI
 
         private void panelInicio_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            MoverVentana.Arrastrar(this);
         }
 
         private void P1_Load(object sender, EventArgs e)

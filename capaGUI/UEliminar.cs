@@ -1,4 +1,5 @@
 ﻿using capaLógica;
+using claseGUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,16 +10,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace claseGUI
+namespace capaGUI
 {
-    public partial class Pedidos : Form
+    public partial class UEliminar : Form
     {
-        public Pedidos()
+        public UEliminar()
         {
             InitializeComponent();
         }
 
-        private void btnVolver_Click(object sender, EventArgs e)
+        private void butnVolver_Click(object sender, EventArgs e)
         {
             PADM nuevoFormulario = new PADM();
             nuevoFormulario.Show();
@@ -27,24 +28,14 @@ namespace claseGUI
             this.Hide();
         }
 
-        private void Pedidos_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void panelInicio_MouseDown(object sender, MouseEventArgs e)
+        private void panelBarra_MouseDown(object sender, MouseEventArgs e)
         {
             MoverVentana.Arrastrar(this);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

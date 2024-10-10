@@ -38,12 +38,12 @@
             this.btnPrueba = new System.Windows.Forms.Button();
             this.groupBoxInicio = new System.Windows.Forms.GroupBox();
             this.panelInicio = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.groupBoxInicio.SuspendLayout();
             this.panelInicio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEnter
@@ -157,37 +157,37 @@
             // panelInicio
             // 
             this.panelInicio.BackColor = System.Drawing.Color.Transparent;
-            this.panelInicio.Controls.Add(this.pictureBox2);
-            this.panelInicio.Controls.Add(this.pictureBoxCerrar);
+            this.panelInicio.Controls.Add(this.btnMinimizar);
+            this.panelInicio.Controls.Add(this.btnCerrar);
             this.panelInicio.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.panelInicio.Location = new System.Drawing.Point(-2, -1);
+            this.panelInicio.Location = new System.Drawing.Point(-2, 1);
             this.panelInicio.Name = "panelInicio";
             this.panelInicio.Size = new System.Drawing.Size(903, 37);
             this.panelInicio.TabIndex = 9;
             this.panelInicio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelInicio_MouseDown);
             // 
-            // pictureBox2
+            // btnMinimizar
             // 
-            this.pictureBox2.BackgroundImage = global::capaGUI.Properties.Resources.delete_14793494;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(838, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.btnMinimizar.BackgroundImage = global::capaGUI.Properties.Resources.delete_14793494;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Location = new System.Drawing.Point(838, 3);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.TabIndex = 11;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBoxCerrar
+            // btnCerrar
             // 
-            this.pictureBoxCerrar.BackgroundImage = global::capaGUI.Properties.Resources.Cerrar1;
-            this.pictureBoxCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxCerrar.Location = new System.Drawing.Point(869, 3);
-            this.pictureBoxCerrar.Name = "pictureBoxCerrar";
-            this.pictureBoxCerrar.Size = new System.Drawing.Size(25, 25);
-            this.pictureBoxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCerrar.TabIndex = 10;
-            this.pictureBoxCerrar.TabStop = false;
-            this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
+            this.btnCerrar.BackgroundImage = global::capaGUI.Properties.Resources.Cerrar1;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Location = new System.Drawing.Point(869, 3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 10;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
             // 
             // P1
             // 
@@ -207,8 +207,8 @@
             this.groupBoxInicio.ResumeLayout(false);
             this.groupBoxInicio.PerformLayout();
             this.panelInicio.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -223,8 +223,8 @@
         private System.Windows.Forms.Button btnPrueba;
         private System.Windows.Forms.GroupBox groupBoxInicio;
         private System.Windows.Forms.Panel panelInicio;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBoxCerrar;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }
 

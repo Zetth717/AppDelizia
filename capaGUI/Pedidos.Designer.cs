@@ -41,7 +41,13 @@
             this.btnListaPedidos = new System.Windows.Forms.Button();
             this.btnAgregarPedido = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.panelInicio = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.groupBoxPedidos.SuspendLayout();
+            this.panelInicio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxPedidos
@@ -58,9 +64,9 @@
             this.groupBoxPedidos.Controls.Add(this.btnListaPedidos);
             this.groupBoxPedidos.Controls.Add(this.btnAgregarPedido);
             this.groupBoxPedidos.Controls.Add(this.btnVolver);
-            this.groupBoxPedidos.Location = new System.Drawing.Point(493, 12);
+            this.groupBoxPedidos.Location = new System.Drawing.Point(493, 44);
             this.groupBoxPedidos.Name = "groupBoxPedidos";
-            this.groupBoxPedidos.Size = new System.Drawing.Size(395, 576);
+            this.groupBoxPedidos.Size = new System.Drawing.Size(395, 544);
             this.groupBoxPedidos.TabIndex = 1;
             this.groupBoxPedidos.TabStop = false;
             // 
@@ -92,7 +98,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(7, 54);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(181, 459);
+            this.listBox1.Size = new System.Drawing.Size(181, 420);
             this.listBox1.TabIndex = 11;
             // 
             // textBoxApellido
@@ -150,7 +156,7 @@
             this.btnListaPedidos.BackColor = System.Drawing.Color.Peru;
             this.btnListaPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnListaPedidos.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListaPedidos.Location = new System.Drawing.Point(7, 526);
+            this.btnListaPedidos.Location = new System.Drawing.Point(7, 494);
             this.btnListaPedidos.Name = "btnListaPedidos";
             this.btnListaPedidos.Size = new System.Drawing.Size(181, 44);
             this.btnListaPedidos.TabIndex = 2;
@@ -162,7 +168,7 @@
             this.btnAgregarPedido.BackColor = System.Drawing.Color.Peru;
             this.btnAgregarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregarPedido.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarPedido.Location = new System.Drawing.Point(208, 414);
+            this.btnAgregarPedido.Location = new System.Drawing.Point(208, 430);
             this.btnAgregarPedido.Name = "btnAgregarPedido";
             this.btnAgregarPedido.Size = new System.Drawing.Size(181, 44);
             this.btnAgregarPedido.TabIndex = 1;
@@ -174,7 +180,7 @@
             this.btnVolver.BackColor = System.Drawing.Color.Firebrick;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolver.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(208, 526);
+            this.btnVolver.Location = new System.Drawing.Point(208, 494);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(181, 44);
             this.btnVolver.TabIndex = 0;
@@ -182,20 +188,60 @@
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // panelInicio
+            // 
+            this.panelInicio.BackColor = System.Drawing.Color.Transparent;
+            this.panelInicio.Controls.Add(this.btnMinimizar);
+            this.panelInicio.Controls.Add(this.btnCerrar);
+            this.panelInicio.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.panelInicio.Location = new System.Drawing.Point(-2, 1);
+            this.panelInicio.Name = "panelInicio";
+            this.panelInicio.Size = new System.Drawing.Size(903, 37);
+            this.panelInicio.TabIndex = 10;
+            this.panelInicio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelInicio_MouseDown);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackgroundImage = global::capaGUI.Properties.Resources.delete_14793494;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Location = new System.Drawing.Point(838, 3);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.TabIndex = 11;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackgroundImage = global::capaGUI.Properties.Resources.Cerrar1;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Location = new System.Drawing.Point(869, 3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 10;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::capaGUI.Properties.Resources.LogoDelizia;
             this.ClientSize = new System.Drawing.Size(900, 600);
+            this.Controls.Add(this.panelInicio);
             this.Controls.Add(this.groupBoxPedidos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedidos";
+            this.Load += new System.EventHandler(this.Pedidos_Load);
             this.groupBoxPedidos.ResumeLayout(false);
             this.groupBoxPedidos.PerformLayout();
+            this.panelInicio.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -214,5 +260,8 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnAgergar;
+        private System.Windows.Forms.Panel panelInicio;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PADM));
-            this.btnUserMgment = new System.Windows.Forms.Button();
+            this.btnAddUsuario = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.butnVolver = new System.Windows.Forms.Button();
             this.btnButton2 = new System.Windows.Forms.Button();
-            this.btnButton = new System.Windows.Forms.Button();
+            this.btnDelUsuario = new System.Windows.Forms.Button();
             this.btnReparto = new System.Windows.Forms.Button();
             this.btnCocina = new System.Windows.Forms.Button();
             this.btnPedidos = new System.Windows.Forms.Button();
@@ -46,29 +46,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnUserMgment
+            // btnAddUsuario
             // 
-            this.btnUserMgment.BackColor = System.Drawing.Color.Peru;
-            this.btnUserMgment.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUserMgment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUserMgment.ForeColor = System.Drawing.Color.Black;
-            this.btnUserMgment.Location = new System.Drawing.Point(6, 19);
-            this.btnUserMgment.Name = "btnUserMgment";
-            this.btnUserMgment.Size = new System.Drawing.Size(181, 44);
-            this.btnUserMgment.TabIndex = 0;
-            this.btnUserMgment.Text = "Gestión de Usuarios";
-            this.btnUserMgment.UseVisualStyleBackColor = false;
+            this.btnAddUsuario.BackColor = System.Drawing.Color.Peru;
+            this.btnAddUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAddUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddUsuario.ForeColor = System.Drawing.Color.Black;
+            this.btnAddUsuario.Location = new System.Drawing.Point(6, 19);
+            this.btnAddUsuario.Name = "btnAddUsuario";
+            this.btnAddUsuario.Size = new System.Drawing.Size(181, 44);
+            this.btnAddUsuario.TabIndex = 0;
+            this.btnAddUsuario.Text = "Ingresar Usuario";
+            this.btnAddUsuario.UseVisualStyleBackColor = false;
+            this.btnAddUsuario.Click += new System.EventHandler(this.btnAddUsuario_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.butnVolver);
             this.groupBox1.Controls.Add(this.btnButton2);
-            this.groupBox1.Controls.Add(this.btnButton);
+            this.groupBox1.Controls.Add(this.btnDelUsuario);
             this.groupBox1.Controls.Add(this.btnReparto);
             this.groupBox1.Controls.Add(this.btnCocina);
             this.groupBox1.Controls.Add(this.btnPedidos);
-            this.groupBox1.Controls.Add(this.btnUserMgment);
+            this.groupBox1.Controls.Add(this.btnAddUsuario);
             this.groupBox1.Location = new System.Drawing.Point(493, 34);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(395, 554);
@@ -100,17 +101,18 @@
             this.btnButton2.Text = "Button2";
             this.btnButton2.UseVisualStyleBackColor = false;
             // 
-            // btnButton
+            // btnDelUsuario
             // 
-            this.btnButton.BackColor = System.Drawing.Color.Peru;
-            this.btnButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnButton.Location = new System.Drawing.Point(6, 69);
-            this.btnButton.Name = "btnButton";
-            this.btnButton.Size = new System.Drawing.Size(181, 44);
-            this.btnButton.TabIndex = 4;
-            this.btnButton.Text = "Button";
-            this.btnButton.UseVisualStyleBackColor = false;
+            this.btnDelUsuario.BackColor = System.Drawing.Color.Peru;
+            this.btnDelUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelUsuario.Location = new System.Drawing.Point(6, 69);
+            this.btnDelUsuario.Name = "btnDelUsuario";
+            this.btnDelUsuario.Size = new System.Drawing.Size(181, 44);
+            this.btnDelUsuario.TabIndex = 4;
+            this.btnDelUsuario.Text = "Eliminar Usuario";
+            this.btnDelUsuario.UseVisualStyleBackColor = false;
+            this.btnDelUsuario.Click += new System.EventHandler(this.btnDelUsuario_Click);
             // 
             // btnReparto
             // 
@@ -155,10 +157,11 @@
             this.panelAdmin.Controls.Add(this.btnMinimizar);
             this.panelAdmin.Controls.Add(this.btnSalir);
             this.panelAdmin.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.panelAdmin.Location = new System.Drawing.Point(-2, -1);
+            this.panelAdmin.Location = new System.Drawing.Point(-2, 1);
             this.panelAdmin.Name = "panelAdmin";
             this.panelAdmin.Size = new System.Drawing.Size(903, 37);
             this.panelAdmin.TabIndex = 10;
+            this.panelAdmin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelAdmin_MouseDown);
             // 
             // btnMinimizar
             // 
@@ -169,9 +172,11 @@
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btnMinimizar.TabIndex = 11;
             this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnSalir
             // 
+            this.btnSalir.BackgroundImage = global::capaGUI.Properties.Resources.Cerrar1;
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Location = new System.Drawing.Point(869, 3);
             this.btnSalir.Name = "btnSalir";
@@ -179,6 +184,7 @@
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSalir.TabIndex = 10;
             this.btnSalir.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // PADM
             // 
@@ -203,13 +209,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnUserMgment;
+        private System.Windows.Forms.Button btnAddUsuario;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnReparto;
         private System.Windows.Forms.Button btnCocina;
         private System.Windows.Forms.Button btnPedidos;
         private System.Windows.Forms.Button btnButton2;
-        private System.Windows.Forms.Button btnButton;
+        private System.Windows.Forms.Button btnDelUsuario;
         private System.Windows.Forms.Button butnVolver;
         private System.Windows.Forms.Panel panelAdmin;
         private System.Windows.Forms.PictureBox btnMinimizar;

@@ -1,15 +1,13 @@
-﻿using System;
-using capaPersistente;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using MySql.Data.MySqlClient;
 
-namespace capaLógica
+namespace capaPersistente
 {
-    public class Logica
+    public class VerificarConexionDB
     {
         private ConexionDB conexionDB = new ConexionDB();
 
@@ -38,5 +36,5 @@ namespace capaLógica
             }
 
         }
-    } 
+    }
 }

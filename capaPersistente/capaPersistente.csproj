@@ -95,7 +95,9 @@
   <ItemGroup>
     <Compile Include="ConexionDB.cs" />
     <Compile Include="DUsuario.cs" />
+    <Compile Include="IngresarUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerificarConexionDB.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
