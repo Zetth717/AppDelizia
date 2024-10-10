@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UEliminar));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listUsuarios = new System.Windows.Forms.ListBox();
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
             this.butnVolver = new System.Windows.Forms.Button();
-            this.listUsuarios = new System.Windows.Forms.ListBox();
             this.panelBarra = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
@@ -53,6 +53,15 @@
             this.groupBox1.Size = new System.Drawing.Size(395, 554);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
+            // 
+            // listUsuarios
+            // 
+            this.listUsuarios.FormattingEnabled = true;
+            this.listUsuarios.Location = new System.Drawing.Point(6, 11);
+            this.listUsuarios.Name = "listUsuarios";
+            this.listUsuarios.Size = new System.Drawing.Size(383, 407);
+            this.listUsuarios.TabIndex = 8;
+            this.listUsuarios.SelectedIndexChanged += new System.EventHandler(this.listUsuarios_SelectedIndexChanged);
             // 
             // btnEliminarUsuario
             // 
@@ -79,14 +88,6 @@
             this.butnVolver.Text = "Volver";
             this.butnVolver.UseVisualStyleBackColor = false;
             this.butnVolver.Click += new System.EventHandler(this.butnVolver_Click);
-            // 
-            // listUsuarios
-            // 
-            this.listUsuarios.FormattingEnabled = true;
-            this.listUsuarios.Location = new System.Drawing.Point(6, 11);
-            this.listUsuarios.Name = "listUsuarios";
-            this.listUsuarios.Size = new System.Drawing.Size(383, 407);
-            this.listUsuarios.TabIndex = 8;
             // 
             // panelBarra
             // 

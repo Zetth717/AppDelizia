@@ -97,6 +97,7 @@
     <Compile Include="ProbarConexion.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UObtenerUsuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\capaPersistente\capaPersistente.csproj">

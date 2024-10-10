@@ -14,12 +14,30 @@ namespace capaGUI
 {
     public partial class UEliminar : Form
     {
+        private UObtenerUsuario usuarioLogica;
         public UEliminar()
         {
             InitializeComponent();
+            usuarioLogica = new UObtenerUsuario();
+            CargarUsuarios();
         }
 
-        private void butnVolver_Click(object sender, EventArgs e)
+        private void CargarUsuarios()
+        {
+            // Obtenemos la lista de cadenas formateadas desde la capa lógica
+            List<string> usuariosFormateados = usuarioLogica.CargarUsuarios();
+
+            // Limpiamos el ListBox antes de agregar elementos
+            listUsuarios.Items.Clear();
+
+            // Añadimos los usuarios formateados al ListBox
+            foreach (string usuarioFormateado in usuariosFormateados)
+            {
+                listUsuarios.Items.Add(usuarioFormateado);
+            }
+        }
+
+            private void butnVolver_Click(object sender, EventArgs e)
         {
             PADM nuevoFormulario = new PADM();
             nuevoFormulario.Show();
@@ -36,6 +54,11 @@ namespace capaGUI
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void listUsuarios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
