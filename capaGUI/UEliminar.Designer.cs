@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
             this.butnVolver = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listUsuarios = new System.Windows.Forms.ListBox();
             this.panelBarra = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
@@ -45,7 +45,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.listBox1);
+            this.groupBox1.Controls.Add(this.listUsuarios);
             this.groupBox1.Controls.Add(this.btnEliminarUsuario);
             this.groupBox1.Controls.Add(this.butnVolver);
             this.groupBox1.Location = new System.Drawing.Point(493, 34);
@@ -80,13 +80,13 @@
             this.butnVolver.UseVisualStyleBackColor = false;
             this.butnVolver.Click += new System.EventHandler(this.butnVolver_Click);
             // 
-            // listBox1
+            // listUsuarios
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 11);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(383, 407);
-            this.listBox1.TabIndex = 8;
+            this.listUsuarios.FormattingEnabled = true;
+            this.listUsuarios.Location = new System.Drawing.Point(6, 11);
+            this.listUsuarios.Name = "listUsuarios";
+            this.listUsuarios.Size = new System.Drawing.Size(383, 407);
+            this.listUsuarios.TabIndex = 8;
             // 
             // panelBarra
             // 
@@ -146,7 +146,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listUsuarios;
         private System.Windows.Forms.Button btnEliminarUsuario;
         private System.Windows.Forms.Button butnVolver;
         private System.Windows.Forms.Panel panelBarra;
