@@ -241,7 +241,7 @@
             this.btnIngresarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIngresarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIngresarUsuario.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresarUsuario.Location = new System.Drawing.Point(150, 350);
+            this.btnIngresarUsuario.Location = new System.Drawing.Point(131, 350);
             this.btnIngresarUsuario.Name = "btnIngresarUsuario";
             this.btnIngresarUsuario.Size = new System.Drawing.Size(99, 38);
             this.btnIngresarUsuario.TabIndex = 7;
