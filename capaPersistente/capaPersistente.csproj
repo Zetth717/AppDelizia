@@ -97,6 +97,8 @@
     <Compile Include="DUsuario.cs" />
     <Compile Include="IngresarUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UAlta.cs" />
+    <Compile Include="UBaja.cs" />
     <Compile Include="UObtener.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="VerificarConexionDB.cs" />

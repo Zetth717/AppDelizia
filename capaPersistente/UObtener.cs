@@ -8,11 +8,11 @@ using capaPersistente;
 
 namespace capaPersistente
 {
-    public class UsuarioPersistencia
+    public class Uobtener
     {
         private ConexionDB conexionDB;
 
-        public UsuarioPersistencia()
+        public Uobtener()
         {
             conexionDB = new ConexionDB();
         }
@@ -21,12 +21,10 @@ namespace capaPersistente
         public List<Usuario> ObtenerUsuarios()
         {
             List<Usuario> listaUsuarios = new List<Usuario>();
-
-            string query = "SELECT ci, nombre, apellido, telefono FROM usuario";
+            string query = "SELECT ci, nombre, apellido, telefono FROM usuario WHERE Estado = 1";
 
             MySqlConnection conexion = conexionDB.getConexion();
             MySqlCommand command = new MySqlCommand(query, conexion);
-
             MySqlDataReader reader = command.ExecuteReader();
 
             while (reader.Read())

@@ -9,11 +9,11 @@ namespace capaLógica
 {
     public class UObtenerUsuario
     {
-        public UsuarioPersistencia usuarioPersistencia;
+        public Uobtener usuarioPersistencia;
 
         public UObtenerUsuario()
         {
-            usuarioPersistencia = new UsuarioPersistencia();
+            usuarioPersistencia = new Uobtener();
         }
 
         public List<Usuario> ObtenerUsuarios()
@@ -34,6 +34,11 @@ namespace capaLógica
             }
 
             return listaFormateada;
+        }
+
+        public bool ActivarUsuario(int ci)
+        {
+            return usuarioPersistencia.ActivarUsuarioPorCi(ci);
         }
     }
 }

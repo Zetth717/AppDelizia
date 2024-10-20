@@ -12,16 +12,16 @@ using System.Windows.Forms;
 
 namespace claseGUI
 {
-    public partial class PADM : Form
+    public partial class Admin : Form
     {
-        public PADM()
+        public Admin()
         {
             InitializeComponent();
         }
 
         private void butnVolver_Click(object sender, EventArgs e)
         {
-            P1 nuevoFormulario = new P1();
+            Login nuevoFormulario = new Login();
             nuevoFormulario.Show();
 
             // Cerrar o esconder el formulario actual (Form1)
@@ -30,7 +30,7 @@ namespace claseGUI
 
         private void btnPedidos_Click(object sender, EventArgs e)
         {
-            Pedidos nuevoFormulario = new Pedidos();
+            PAgregar nuevoFormulario = new PAgregar();
             nuevoFormulario.Show();
 
             // Cerrar o esconder el formulario actual (Form1)
@@ -63,7 +63,16 @@ namespace claseGUI
 
         private void btnDelUsuario_Click(object sender, EventArgs e)
         {
-            UEliminar nuevoFormulario = new UEliminar();
+            UBaja nuevoFormulario = new UBaja();
+            nuevoFormulario.Show();
+
+            // Cerrar o esconder el formulario actual (Form1)
+            this.Hide();
+        }
+
+        private void btnCocina_Click(object sender, EventArgs e)
+        {
+            PLista nuevoFormulario = new PLista();
             nuevoFormulario.Show();
 
             // Cerrar o esconder el formulario actual (Form1)

@@ -16,7 +16,7 @@ namespace claseGUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new P1());
+            Application.Run(new Login());
         }
     }
 }

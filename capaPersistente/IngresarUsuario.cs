@@ -20,11 +20,11 @@ namespace capaPersistencia
         }
 
         // Método para insertar un usuario en la base de datos
-        public bool InsertarUsuario(int id, int ci, string nombre, string apellido, int telefono, int clave, string rol)
+        public bool InsertarUsuario(int ci, string nombre, string apellido, string telefono, int clave, string rol)
         {
             // Validar que los campos no estén vacíos o con los placeholders
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido) ||
-        ci <= 0 || telefono <= 0 || clave <= 0 || string.IsNullOrEmpty(rol))
+        ci <= 0 || string.IsNullOrEmpty(telefono) || clave <= 0 || string.IsNullOrEmpty(rol))
             {
                 throw new ArgumentException("Debe completar todos los campos.");
             }
@@ -35,11 +35,11 @@ namespace capaPersistencia
                 // Obtenemos la conexión desde la clase ConexionDB
                 using (MySqlConnection conexion = ingresarUsuario.getConexion())
                 {
-                    string query = "INSERT INTO usuario (nombre, apellido) VALUES (@nombre, @apellido)";
+                    string query = "INSERT INTO usuario (ci, nombre, apellido, telefono, clave, rol) " +
+                           "VALUES (@ci, @nombre, @apellido, @telefono, @clave, @rol)";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@id", id);
                         cmd.Parameters.AddWithValue("@ci", ci);
                         cmd.Parameters.AddWithValue("@nombre", nombre);
                         cmd.Parameters.AddWithValue("@apellido", apellido);

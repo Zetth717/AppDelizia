@@ -1,6 +1,6 @@
 ﻿namespace claseGUI
 {
-    partial class P1
+    partial class Login
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(P1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.btnEnter = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.textBoxUser = new System.Windows.Forms.TextBox();
@@ -168,28 +168,28 @@
             // 
             // btnMinimizar
             // 
-            this.btnMinimizar.BackgroundImage = global::capaGUI.Properties.Resources.delete_14793494;
+            this.btnMinimizar.BackgroundImage = global::capaGUI.Properties.Resources.Minimizar;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Location = new System.Drawing.Point(838, 3);
+            this.btnMinimizar.Location = new System.Drawing.Point(833, 3);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.Size = new System.Drawing.Size(30, 30);
             this.btnMinimizar.TabIndex = 11;
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // btnCerrar
             // 
-            this.btnCerrar.BackgroundImage = global::capaGUI.Properties.Resources.Cerrar1;
+            this.btnCerrar.BackgroundImage = global::capaGUI.Properties.Resources.Cerrar;
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Location = new System.Drawing.Point(869, 3);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrar.Size = new System.Drawing.Size(30, 30);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 10;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
             // 
-            // P1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,7 +200,7 @@
             this.Controls.Add(this.groupBoxInicio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "P1";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.P1_Load);

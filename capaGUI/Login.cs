@@ -13,11 +13,11 @@ using System.Runtime.InteropServices;
 
 namespace claseGUI
 {
-    public partial class P1 : Form
+    public partial class Login : Form
     {
         // Instancia de la capa lógica
         private ProbarConexion logica = new ProbarConexion();
-        public P1()
+        public Login()
         {
             InitializeComponent();
             SetPlaceholders(); // Establece placeholder al cargar el formulario
@@ -43,7 +43,7 @@ namespace claseGUI
             string nombre = textBoxUser.Text;
             string clave = textBoxPsw.Text;
 
-            Login login = new Login();
+            capaLógica.Login login = new capaLógica.Login();
             string rol = login.VerificarUsuarioYObtenerRol(nombre, clave);  // Obtener el rol del usuario
 
             if (rol == null)
@@ -52,13 +52,13 @@ namespace claseGUI
             }
             else if (rol == "ADMINISTRADOR")
             {
-                PADM formAdmin = new PADM();
+                Admin formAdmin = new Admin();
                 formAdmin.Show();
                 this.Hide();  // Ocultar el formulario actual
             }
             else if (rol == "PEDIDOS")
             {
-                Pedidos formCocinero = new Pedidos();
+                PAgregar formCocinero = new PAgregar();
                 formCocinero.Show();
                 this.Hide();  // Ocultar el formulario actual
             }

@@ -15,93 +15,78 @@ namespace capaGUI
 {
     public partial class UAgregar : Form
     {
+        private UObtenerUsuario usuarioLogica;
+        private UBajaUsuario bajaUsuario;
+        private UAltaLógica usuarioAlta;
         public UAgregar()
         {
             InitializeComponent();
-            // Establece placeholder al cargar el formulario
-            //SetPlaceholders();
             // Inicializa la clase lógica
+            bajaUsuario = new UBajaUsuario();
+            usuarioLogica = new UObtenerUsuario();
+            usuarioAlta = new UAltaLógica();
+            CargarUsuarios();
             gestionUsuario = new GestiónUsuario();
+            // Agregar los nombres al ComboBox
+            Rol.Items.Add("ADMINISTRADOR");
+            Rol.Items.Add("COCINA");
+            Rol.Items.Add("PEDIDOS");
+            Rol.Items.Add("REPARTO");
         }
 
-        /* Establece los placeholders para ambos TextBox al cargar el formulario
-        private void SetPlaceholders()
+        private void CargarUsuarios()
         {
-            // Placeholder para txtNombre
-            if (string.IsNullOrEmpty(txtNombre.Text))
+            // Obtenemos la lista de cadenas formateadas desde la capa lógica
+            List<string> usuariosFormateados = usuarioLogica.CargarUsuarios();
+
+            // Limpiamos el ListBox antes de agregar elementos
+            listUsuarios.Items.Clear();
+
+            // Añadimos los usuarios formateados al ListBox
+            foreach (string usuarioFormateado in usuariosFormateados)
             {
-                txtNombre.Text = "Nombre";
-                txtNombre.ForeColor = Color.Gray;
+                listUsuarios.Items.Add(usuarioFormateado);
             }
+        }
 
-            // Placeholder para txtApellido
-            if (string.IsNullOrEmpty(txtApellido.Text))
+        private int ObtenerIdUsuarioSeleccionado()
+        {
+            if (listUsuarios.SelectedItem != null)
             {
-                txtApellido.Text = "Apellido";
-                txtApellido.ForeColor = Color.Gray;
+                // Obtenemos la cadena seleccionada, que tiene el formato "Nombre Apellido - CI"
+                string usuarioSeleccionado = listUsuarios.SelectedItem.ToString();
+
+                // Suponemos que el formato es "Nombre Apellido - CI", y extraemos el CI
+                // Usamos Split para dividir el string por el guión ("-") y luego obtener el CI
+                string[] partes = usuarioSeleccionado.Split('-');
+
+                if (partes.Length == 2)
+                {
+                    string ciString = partes[1].Trim(); // Obtenemos el CI, eliminamos espacios en blanco
+                    return Convert.ToInt32(ciString);   // Convertimos el CI a entero
+                }
+                else
+                {
+                    MessageBox.Show("Formato de usuario no válido.");
+                    return -1;
+                }
             }
-        }
-
-        // Evento cuando el txtNombre recibe el foco
-        private void txtNombre_Enter(object sender, EventArgs e)
-        {
-            txtNombre.Text = "";
-            txtNombre.ForeColor = Color.Black;
-        }
-
-            // Evento cuando el textBoxUser pierde el foco
-            private void txtNombre_Leave(object sender, EventArgs e)
-        {
-            txtNombre.Text = "Nombre";
-            txtNombre.ForeColor = Color.Gray;
-        }
-
-        // Evento cuando el txtApellido recibe el foco
-        private void txtApellido_Enter(object sender, EventArgs e)
-        {
-            txtApellido.Text = "";
-            txtApellido.ForeColor = Color.Black;
-        }
-
-        // Evento cuando el textBoxUser pierde el foco
-        private void txtApellido_Leave(object sender, EventArgs e)
-        {
-            txtApellido.Text = "Apellido";
-            txtApellido.ForeColor = Color.Gray;
-        }
-
-        */
-
-        private void butnVolver_Click(object sender, EventArgs e)
-        {
-            PADM nuevoFormulario = new PADM();
-            nuevoFormulario.Show();
-
-            // Cerrar o esconder el formulario actual (Form1)
-            this.Hide();
+            else
+            {
+                MessageBox.Show("Por favor selecciona un usuario.");
+                return -1;
+            }
         }
 
         private GestiónUsuario gestionUsuario;
 
         private void btnIngresarUsuario_Click(object sender, EventArgs e)
         {
-            int id, ci, telefono, clave;
-
-            if (!int.TryParse(txtId.Text, out id))
-            {
-                MessageBox.Show("El ID debe ser un número válido.");
-                return;
-            }
+            int ci, clave;
 
             if (!int.TryParse(txtCi.Text, out ci))
             {
                 MessageBox.Show("La cédula debe ser un número válido.");
-                return;
-            }
-
-            if (!int.TryParse(txtTel.Text, out telefono))
-            {
-                MessageBox.Show("El teléfono debe ser un número válido.");
                 return;
             }
 
@@ -112,9 +97,11 @@ namespace capaGUI
             }
 
             // Capturamos los valores de los otros controles
+            string telefono = txtTel.Text;
             string nombre = txtNombre.Text;
             string apellido = txtApellido.Text;
-            string rol = txtRol.Text;
+            //string rol = txtRol.Text;
+            string rol = Rol.SelectedItem?.ToString();
 
             // Asegurarnos de que todos los campos de texto estén llenos antes de proceder
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido) || string.IsNullOrEmpty(rol))
@@ -124,11 +111,21 @@ namespace capaGUI
             }
 
             // Llamamos a la clase lógica para registrar el usuario
-            bool resultado = gestionUsuario.RegistrarUsuario(id, ci, nombre, apellido, telefono, clave, rol);
+            bool resultado = gestionUsuario.RegistrarUsuario(ci, nombre, apellido, telefono, clave, rol);
 
             if (resultado)
             {
                 MessageBox.Show("Usuario registrado exitosamente.");
+                // Limpiar los TextBox
+                txtCi.Text = "";
+                txtClave.Text = "";
+                txtTel.Text = "";
+                txtNombre.Text = "";
+                txtApellido.Text = "";
+
+                // Restablecer el ComboBox
+                Rol.SelectedIndex = -1; // Deseleccionar el ComboBox
+                CargarUsuarios();
             }
             else
             {
@@ -149,6 +146,67 @@ namespace capaGUI
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtNombre_Enter(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "Nombre")
+            {
+                txtNombre.Text = "";
+                txtNombre.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnBajaUsuario_Click(object sender, EventArgs e)
+        {
+            // Obtiene el ID del usuario seleccionado
+            int usuarioCi = ObtenerIdUsuarioSeleccionado();
+            bool exito = bajaUsuario.DarDeBajaUsuario(usuarioCi);
+
+            if (exito)
+            {
+                MessageBox.Show("Usuario dado de baja exitosamente.");
+                CargarUsuarios();
+            }
+            else
+            {
+                MessageBox.Show("No se pudo dar de baja al usuario.");
+            }
+        }
+
+        private void btnAlta_Click(object sender, EventArgs e)
+        {
+            int ci;
+
+            // Valida si el valor ingresado es un número entero válido
+            if (!int.TryParse(txtAlta.Text, out ci))
+            {
+                MessageBox.Show("Por favor, ingrese una cédula de identidad válida.");
+                return;
+            }
+
+            // Llama a la lógica para activar al usuario con esa CI
+            bool resultado = usuarioAlta.ActivarUsuarioPorCi(ci);
+
+            if (resultado)
+            {
+                MessageBox.Show("Usuario activado exitosamente.");
+                // Refresca el ListBox3
+                CargarUsuarios();
+            }
+            else
+            {
+                MessageBox.Show("No se pudo activar el usuario. Verifique que la CI sea correcta o que el usuario esté inactivo.");
+            }
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            Admin nuevoFormulario = new Admin();
+            nuevoFormulario.Show();
+
+            // Cerrar o esconder el formulario actual (Form1)
+            this.Hide();
         }
     }
 }

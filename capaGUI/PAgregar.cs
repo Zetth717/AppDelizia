@@ -1,4 +1,5 @@
-﻿using capaLógica;
+﻿using capaGUI;
+using capaLógica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,20 +12,11 @@ using System.Windows.Forms;
 
 namespace claseGUI
 {
-    public partial class Pedidos : Form
+    public partial class PAgregar : Form
     {
-        public Pedidos()
+        public PAgregar()
         {
             InitializeComponent();
-        }
-
-        private void btnVolver_Click(object sender, EventArgs e)
-        {
-            PADM nuevoFormulario = new PADM();
-            nuevoFormulario.Show();
-
-            // Cerrar o esconder el formulario actual (Form1)
-            this.Hide();
         }
 
         private void Pedidos_Load(object sender, EventArgs e)
@@ -45,6 +37,29 @@ namespace claseGUI
         private void panelInicio_MouseDown(object sender, MouseEventArgs e)
         {
             MoverVentana.Arrastrar(this);
+        }
+
+        private void groupBoxPedidos_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListaPedidos_Click(object sender, EventArgs e)
+        {
+            PLista nuevoFormulario = new PLista();
+            nuevoFormulario.Show();
+
+            // Cerrar o esconder el formulario actual (Form1)
+            this.Hide();
+        }
+
+        private void btnVolver_Click_1(object sender, EventArgs e)
+        {
+            Admin nuevoFormulario = new Admin();
+            nuevoFormulario.Show();
+
+            // Cerrar o esconder el formulario actual (Form1)
+            this.Hide();
         }
     }
 }

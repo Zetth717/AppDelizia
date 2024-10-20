@@ -1,6 +1,6 @@
 ﻿namespace capaGUI
 {
-    partial class UEliminar
+    partial class UBaja
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UEliminar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UBaja));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listUsuarios = new System.Windows.Forms.ListBox();
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
@@ -48,9 +48,9 @@
             this.groupBox1.Controls.Add(this.listUsuarios);
             this.groupBox1.Controls.Add(this.btnEliminarUsuario);
             this.groupBox1.Controls.Add(this.butnVolver);
-            this.groupBox1.Location = new System.Drawing.Point(493, 34);
+            this.groupBox1.Location = new System.Drawing.Point(12, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(395, 554);
+            this.groupBox1.Size = new System.Drawing.Size(876, 554);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             // 
@@ -60,7 +60,7 @@
             this.listUsuarios.FormattingEnabled = true;
             this.listUsuarios.Location = new System.Drawing.Point(6, 11);
             this.listUsuarios.Name = "listUsuarios";
-            this.listUsuarios.Size = new System.Drawing.Size(383, 407);
+            this.listUsuarios.Size = new System.Drawing.Size(187, 407);
             this.listUsuarios.TabIndex = 8;
             this.listUsuarios.SelectedIndexChanged += new System.EventHandler(this.listUsuarios_SelectedIndexChanged);
             // 
@@ -70,19 +70,20 @@
             this.btnEliminarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEliminarUsuario.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(146, 431);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(6, 433);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.Size = new System.Drawing.Size(99, 38);
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(187, 38);
             this.btnEliminarUsuario.TabIndex = 7;
-            this.btnEliminarUsuario.Text = "Eliminar";
+            this.btnEliminarUsuario.Text = "Baja";
             this.btnEliminarUsuario.UseVisualStyleBackColor = false;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
             // butnVolver
             // 
             this.butnVolver.BackColor = System.Drawing.Color.Firebrick;
             this.butnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.butnVolver.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butnVolver.Location = new System.Drawing.Point(208, 504);
+            this.butnVolver.Location = new System.Drawing.Point(689, 504);
             this.butnVolver.Name = "butnVolver";
             this.butnVolver.Size = new System.Drawing.Size(181, 44);
             this.butnVolver.TabIndex = 6;
@@ -124,17 +125,17 @@
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // UEliminar
+            // UBaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::capaGUI.Properties.Resources.LogoDelizia;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(900, 600);
             this.Controls.Add(this.panelBarra);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "UEliminar";
+            this.Name = "UBaja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UEliminar";
             this.groupBox1.ResumeLayout(false);

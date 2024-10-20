@@ -78,24 +78,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLista.Designer.cs">
+      <DependentUpon>PLista.cs</DependentUpon>
+    </Compile>
     <Compile Include="MoverVentana.cs" />
-    <Compile Include="P1.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="P1.Designer.cs">
-      <DependentUpon>P1.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PADM.cs">
+    <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PADM.Designer.cs">
-      <DependentUpon>PADM.cs</DependentUpon>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pedidos.cs">
+    <Compile Include="PAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pedidos.Designer.cs">
-      <DependentUpon>Pedidos.cs</DependentUpon>
+    <Compile Include="PAgregar.Designer.cs">
+      <DependentUpon>PAgregar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,20 +111,23 @@
     <Compile Include="UAgregar.Designer.cs">
       <DependentUpon>UAgregar.cs</DependentUpon>
     </Compile>
-    <Compile Include="UEliminar.cs">
+    <Compile Include="UBaja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UEliminar.Designer.cs">
-      <DependentUpon>UEliminar.cs</DependentUpon>
+    <Compile Include="UBaja.Designer.cs">
+      <DependentUpon>UBaja.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="P1.resx">
-      <DependentUpon>P1.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PADM.resx">
-      <DependentUpon>PADM.cs</DependentUpon>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pedidos.resx">
-      <DependentUpon>Pedidos.cs</DependentUpon>
+    <EmbeddedResource Include="PAgregar.resx">
+      <DependentUpon>PAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLista.resx">
+      <DependentUpon>PLista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,8 +137,8 @@
     <EmbeddedResource Include="UAgregar.resx">
       <DependentUpon>UAgregar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UEliminar.resx">
-      <DependentUpon>UEliminar.cs</DependentUpon>
+    <EmbeddedResource Include="UBaja.resx">
+      <DependentUpon>UBaja.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -175,6 +184,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pizza1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cocacola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cocacola1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimizar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoDelizia.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
