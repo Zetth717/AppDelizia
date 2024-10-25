@@ -17,6 +17,11 @@ namespace capaPersistente
             conexionDB = new ConexionDB();
         }
 
+        public bool ActivarUsuarioPorCi(int ci)
+        {
+            throw new NotImplementedException();
+        }
+
         // Método para obtener la lista de usuarios
         public List<Usuario> ObtenerUsuarios()
         {
